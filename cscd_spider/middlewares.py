@@ -6,6 +6,57 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+from selenium import webdriver
+from scrapy.http import HtmlResponse
+import time
+
+
+# 模拟鼠标点击，选中/不选中单选框
+class ClickMiddleware(object):
+    def process_request(self, request, spider):
+        click_page_url = "http://ref.cnki.net/REF/AdvSearch#toolbarDiv"
+        if request.url == click_page_url:
+            driver = webdriver.Chrome()
+            try:
+                driver.get(request.url)
+                driver.implicitly_wait(3)
+                time.sleep(5)
+
+                # dissertation = "//input[@id='cb_beref_cdmd']"  # 学位论文
+                dissertation = driver.find_element_by_id("cb_beref_cdmd")  # 学位论文
+
+                # newspaper = "//input[@id='cb_beref_ccnd']"  # 报纸
+                newspaper = driver.find_element_by_id("cb_beref_ccnd")  # 报纸
+
+                # magazine = "//input[@id='cb_beref_cbbd']"  # 图书
+                magazine = driver.find_element_by_id("cb_beref_cbbd")  # 图书
+
+                # foreign = "//input[@id='cb_beref_crldeng']"  # 外文
+                foreign = driver.find_element_by_id("cb_beref_crldeng")  # 外文
+
+                # others = "//input[@id='cb_beref_wfb']"  # 其他
+                others = driver.find_element_by_id("cb_beref_wfb")  # 其他
+
+                no_need = [dissertation, newspaper, magazine, foreign, others]
+                for item in no_need:
+                    # 数据由js来控制,点击后加载数据
+                    item.click()
+                    # driver.find_element_by_xpath(item).click()
+                    # time.sleep(5)
+
+                # 按下“搜索”按钮
+                search_button = driver.find_element_by_id("advSearchBtn")
+                search_button.click()
+
+                true_page = driver.page_source
+                driver.close()
+
+                return HtmlResponse(request.url, body=true_page, encoding='utf-8', request=request)
+
+            except BaseException:
+                print("get news data failed")
+        else:
+            return None
 
 
 class CscdSpiderSpiderMiddleware(object):
@@ -101,3 +152,4 @@ class CscdSpiderDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
