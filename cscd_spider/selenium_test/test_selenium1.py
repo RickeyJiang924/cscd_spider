@@ -57,24 +57,28 @@ def process_request(driver):
         # 有验证码出现的情况
         except Exception:
             # 自动识别
-            # while driver.find_element_by_id("changeVercode") is not None:
-            #     driver.find_element_by_id("changeVercode").click()
-            #     time.sleep(1)
-            #     image_item = driver.find_element_by_id("changeVercode")
-            #     # 识别验证码
-            #     code = verify_code(image_item.get_attribute("src"))
-            #     # 填充验证码
-            #     driver.find_element_by_id("vericode").clear()
-            #     driver.find_element_by_id("vericode").send_keys(code)
-            #     # 点击提交按钮
-            #     driver.find_element_by_id("checkCodeBtn").click()
-            # 人工识别
-            # 输入中断
-            input()
+            try:
+                while driver.find_element_by_id("changeVercode") is not None:
+                    driver.find_element_by_id("changeVercode").click()
+                    time.sleep(10)
+                    image_item = driver.find_element_by_id("changeVercode")
+                    # 识别验证码
+                    code = verify_code(image_item.get_attribute("src"))
+                    # 填充验证码
+                    driver.find_element_by_id("vericode").click()
+                    driver.find_element_by_id("vericode").clear()
+                    driver.find_element_by_id("vericode").send_keys(code)
+                    # 点击提交按钮
+                    driver.find_element_by_id("checkCodeBtn").click()
+                # 人工识别
+                # 输入中断
+                # input()
+            except Exception:
+                return process_request(driver)
             return process_request(driver)
 
         # 正常爬取
-        file = open("href.txt", "a+")
+        file = open("href1.txt", "a+")
         next_page = driver.find_element_by_class_name("next")
         for url in driver.find_elements_by_xpath('//div[@class="listCont"]//a[@class="title"]'):
             # print(url.get_attribute("href"))
@@ -91,7 +95,6 @@ def process_request(driver):
 
 
 def verify_code(image_url):
-    time.sleep(3)
     urllib.request.urlretrieve(image_url, "check_picture/checkbox.jpg")
     image = Image.open('check_picture/checkbox.jpg')
     # 转为灰度图像 设定二值化阈值
