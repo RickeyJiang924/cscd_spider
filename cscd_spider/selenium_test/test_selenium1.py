@@ -64,6 +64,7 @@ def process_request(driver):
                     image_item = driver.find_element_by_id("changeVercode")
                     # 识别验证码
                     code = verify_code(image_item.get_attribute("src"))
+                    time.sleep(2)
                     # 填充验证码
                     driver.find_element_by_id("vericode").click()
                     driver.find_element_by_id("vericode").clear()
@@ -95,15 +96,15 @@ def process_request(driver):
 
 
 def verify_code(image_url):
-    urllib.request.urlretrieve(image_url, "check_picture/checkbox.jpg")
-    image = Image.open('check_picture/checkbox.jpg')
+    urllib.request.urlretrieve(image_url, "check_picture/checkbox1.jpg")
+    image = Image.open('check_picture/checkbox1.jpg')
     # 转为灰度图像 设定二值化阈值
     image = image.convert('L')
     # 对比度增强
     sharpness = ImageEnhance.Contrast(image)
     sharp_img = sharpness.enhance(2.0)
-    sharp_img.save("check_picture/checkbox.jpg")
-    result = pytesser3.image_file_to_string("check_picture/checkbox.jpg").replace(" ", "")
+    sharp_img.save("check_picture/checkbox1.jpg")
+    result = pytesser3.image_file_to_string("check_picture/checkbox1.jpg").replace(" ", "")
     print(result)
     return result
 

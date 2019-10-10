@@ -3,7 +3,7 @@ from scrapy.http import HtmlResponse
 import time
 import urllib.request
 from PIL import Image, ImageEnhance
-import pytesser3
+import pytesser3 as tesser
 
 
 def pre_process_request(url):
@@ -100,11 +100,13 @@ def verify_code(image_url):
     sharpness = ImageEnhance.Contrast(image)
     sharp_img = sharpness.enhance(2.0)
     sharp_img.save("check_picture/checkbox.jpg")
-    result = pytesser3.image_file_to_string("check_picture/checkbox.jpg").replace(" ", "")
+
+    # C:\Program Files (x86)\Tesseract-OCR\tessdata\configs 修改参数 只匹配数字和大小写字母
+    result = tesser.image_file_to_string("check_picture/checkbox.jpg").replace(" ", "")
     print(result)
     return result
 
 
 if __name__ == "__main__":
-    pre_process_request("http://ref.cnki.net/REF/AdvSearch")
-    # verify_code("http://ref.cnki.net/REF/Common/VerifyCode?t=0.3285117217251785")
+    # pre_process_request("http://ref.cnki.net/REF/AdvSearch")
+    verify_code("http://ref.cnki.net/REF/Common/VerifyCode?t=0.8341012440801842")
