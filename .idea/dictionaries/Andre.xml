@@ -5,19 +5,30 @@
       <w>cbbd</w>
       <w>ccnd</w>
       <w>cdmd</w>
+      <w>chromedriver</w>
+      <w>cnki</w>
       <w>connecyions</w>
+      <w>cookiejar</w>
       <w>crldeng</w>
       <w>cscd</w>
       <w>datestyle</w>
       <w>dbname</w>
+      <w>divv</w>
+      <w>elist</w>
+      <w>kcmstarget</w>
       <w>maxcached</w>
       <w>maxconnecyions</w>
+      <w>maxpage</w>
       <w>maxshared</w>
       <w>maxusage</w>
       <w>middlewares</w>
       <w>mincached</w>
+      <w>pymysql</w>
       <w>scrapy</w>
       <w>setsession</w>
+      <w>vercode</w>
+      <w>vericode</w>
+      <w>webdriver</w>
     </words>
   </dictionary>
 </component>
