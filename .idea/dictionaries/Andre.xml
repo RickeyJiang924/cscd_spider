@@ -14,7 +14,9 @@
       <w>datestyle</w>
       <w>dbname</w>
       <w>divv</w>
+      <w>dont</w>
       <w>elist</w>
+      <w>iframe</w>
       <w>kcmstarget</w>
       <w>maxcached</w>
       <w>maxconnecyions</w>
@@ -30,6 +32,7 @@
       <w>vercode</w>
       <w>vericode</w>
       <w>webdriver</w>
+      <w>wxmain</w>
     </words>
   </dictionary>
 </component>

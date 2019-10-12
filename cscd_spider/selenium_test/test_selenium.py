@@ -1,18 +1,13 @@
 from selenium import webdriver
-from scrapy.http import HtmlResponse
 import time
 import urllib.request
 from PIL import Image, ImageEnhance
-from selenium.webdriver.chrome.options import Options
 import pytesser3
 
 
 def pre_process_request(url):
     click_page_url = url
     driver_address = "C:/Users/Andre\AppData\Local\Programs\Python\Python37\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe"
-    # chrome_options = Options()
-    # chrome_options.add_argument('--headless')
-    # driver = webdriver.Chrome(executable_path=driver_address, options=chrome_options)
     driver = webdriver.Chrome(executable_path=driver_address)
     driver.maximize_window()
 
@@ -51,10 +46,22 @@ def pre_process_request(url):
     search_button.click()
 
     time.sleep(1)  # 4191
-    for i in range(4190):
-        next_page = driver.find_element_by_class_name("next")
-        next_page.click()
+    go_on(driver, 4191)
+
     process_request(driver)
+
+
+# 服务器23点关闭，所以得暂停第二天继续
+def go_on(driver, times):
+    count = times
+    for i in range(times):
+        try:
+            next_page = driver.find_element_by_class_name("next")
+            time.sleep(0.5)
+            next_page.click()
+            count -= 1
+        except Exception:
+            go_on(driver, count)
 
 
 def process_request(driver):
@@ -100,7 +107,7 @@ def process_request(driver):
         # 正常爬取
         try:
             time.sleep(2)
-            file = open("href1.txt", "a+")
+            file = open("href2.txt", "a+")
             next_page = driver.find_element_by_class_name("next")
             for url in driver.find_elements_by_xpath('//div[@class="listCont"]//a[@class="title"]'):
                 # print(url.get_attribute("href"))

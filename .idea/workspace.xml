@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885a8992-6640-4723-b3ef-12d148ca8351" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cscd_spider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cscd_spider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Andre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Andre.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cscd_spider/selenium_test/check_picture/checkbox.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cscd_spider/selenium_test/check_picture/checkbox2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cscd_spider/selenium_test/href.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cscd_spider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/cscd_spider/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cscd_spider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/cscd_spider/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cscd_spider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/cscd_spider/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cscd_spider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cscd_spider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cscd_spider/spiders/citation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cscd_spider/spiders/citation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cscd_spider/spiders/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cscd_spider/spiders/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,28 +31,28 @@
           <entry key="jpg" value="17" />
           <entry key="md" value="4" />
           <entry key="png" value="2" />
-          <entry key="py" value="57" />
-          <entry key="txt" value="16" />
+          <entry key="py" value="83" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="19" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="57" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="93" />
-          <entry key="py" value="3872" />
+          <entry key="py" value="6027" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="93" />
-          <entry key="Python" value="3872" />
+          <entry key="Python" value="6027" />
         </counts>
       </usages-collector>
     </session>
@@ -62,37 +62,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="206">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-                <marker date="1570886164074" expanded="true" signature="4365:4406" ph="..." />
-                <marker date="1570886164074" expanded="true" signature="4455:4553" ph="..." />
+                <marker date="1570924450089" expanded="true" signature="1673:1922" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cscd_spider/spiders/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="43" column="114" lean-forward="true" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cscd_spider/spiders/citation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+            <state relative-caret-position="600">
+              <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/href1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -116,9 +118,14 @@
       <find>logging</find>
       <find>refer</find>
       <find>robot</find>
+      <find>citation</find>
+      <find>html</find>
+      <find>iframe</find>
     </findStrings>
     <replaceStrings>
       <replace>config</replace>
+      <replace>result</replace>
+      <replace>middle</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -129,21 +136,21 @@
       <list>
         <option value="$PROJECT_DIR$/cscd_spider/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/cscd_spider/items.py" />
         <option value="$PROJECT_DIR$/cscd_spider/db_config.py" />
         <option value="$PROJECT_DIR$/cscd_spider/db_connection_pool.py" />
-        <option value="$PROJECT_DIR$/cscd_spider/pipelines.py" />
-        <option value="$PROJECT_DIR$/cscd_spider/settings.py" />
-        <option value="$PROJECT_DIR$/cscd_spider/spiders/test.py" />
-        <option value="$PROJECT_DIR$/cscd_spider/middlewares.py" />
         <option value="$PROJECT_DIR$/cscd_spider/spiders/test_selenium.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pytesser3/__init__.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pytesser3/code.py" />
         <option value="$PROJECT_DIR$/cscd_spider/selenium_test/verify_code.py" />
-        <option value="$PROJECT_DIR$/cscd_spider/spiders/citation.py" />
         <option value="$PROJECT_DIR$/cscd_spider/selenium_test/test.py" />
-        <option value="$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py" />
         <option value="$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium1.py" />
+        <option value="$PROJECT_DIR$/cscd_spider/middlewares.py" />
+        <option value="$PROJECT_DIR$/cscd_spider/settings.py" />
+        <option value="$PROJECT_DIR$/cscd_spider/items.py" />
+        <option value="$PROJECT_DIR$/cscd_spider/pipelines.py" />
+        <option value="$PROJECT_DIR$/cscd_spider/spiders/citation.py" />
+        <option value="$PROJECT_DIR$/cscd_spider/spiders/test.py" />
+        <option value="$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py" />
       </list>
     </option>
   </component>
@@ -208,13 +215,6 @@
               <item name="cscd_spider" type="b2602c69:ProjectViewProjectNode" />
               <item name="cscd_spider" type="462c0819:PsiDirectoryNode" />
               <item name="cscd_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium_test" type="462c0819:PsiDirectoryNode" />
-              <item name="check_picture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cscd_spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cscd_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="cscd_spider" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -228,10 +228,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\study\PycharmProjects\cscd_spider" />
       <recent name="E:\study\PycharmProjects\cscd_spider\cscd_spider\selenium_test" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\study\PycharmProjects\cscd_spider\cscd_spider\selenium_test" />
     </key>
   </component>
@@ -247,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_selenium1">
+  <component name="RunManager" selected="Python.test_selenium (1)">
     <configuration name="code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cscd_spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,6 +291,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cscd_spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cscd_spider/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cscd_spider/spiders/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_selenium (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cscd_spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,27 +325,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="cscd_spider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cscd_spider/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\study\PycharmProjects\cscd_spider\cscd_spider\selenium_test\test_selenium.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,19 +355,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_selenium" />
       <item itemvalue="Python.code" />
       <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.test_selenium (1)" />
       <item itemvalue="Python.test_selenium1" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_selenium1" />
         <item itemvalue="Python.test_selenium (1)" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test_selenium1" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.code" />
-        <item itemvalue="Python.test_selenium" />
       </list>
     </recent_temporary>
   </component>
@@ -387,12 +388,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985465" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="1" sideWeight="0.50145346" side_tool="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985465" visible="true" weight="0.13119073" />
+      <window_info id="Structure" order="1" sideWeight="0.50145346" side_tool="true" weight="0.13119073" />
       <window_info id="Favorites" order="2" sideWeight="0.50145346" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2529859" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2529859" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,6 +406,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985465" visible="true" weight="0.13171759" />
+      <window_info id="Structure" order="1" sideWeight="0.50145346" side_tool="true" weight="0.24973656" />
+      <window_info id="Favorites" order="2" sideWeight="0.50145346" side_tool="true" weight="0.24973656" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2529859" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -424,13 +444,6 @@
     <entry file="file://$PROJECT_DIR$/../hupu_spider/hupu_spider/middlewares.py" />
     <entry file="file://$PROJECT_DIR$/../hupu_spider/hupu_spider/settings.py" />
     <entry file="file://$PROJECT_DIR$/../hupu_spider/hupu_spider/db_config.py" />
-    <entry file="file://$PROJECT_DIR$/cscd_spider/db_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../hupu_spider/hupu_spider/db_connection_pool.py" />
     <entry file="file://$PROJECT_DIR$/cscd_spider/db_connection_pool.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -444,27 +457,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../hupu_spider/hupu_spider/pipelines.py" />
-    <entry file="file://$PROJECT_DIR$/cscd_spider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cscd_spider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cscd_spider/spiders/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../hupu_spider/hupu_spider/spiders/hupu_post_spider.py" />
     <entry file="file://$PROJECT_DIR$/cscd_spider/spiders/href.txt" />
     <entry file="file://$PROJECT_DIR$/cscd_spider/spiders/__init__.py">
@@ -486,21 +478,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/verify_code.py" />
     <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/local-filename.jpg" />
-    <entry file="file://$PROJECT_DIR$/cscd_spider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/check_picture/test.jpg" />
-    <entry file="file://$PROJECT_DIR$/cscd_spider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/test.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/PIL/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -512,9 +490,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/check_picture/checkbox.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/temp.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/check_picture/checkbox2.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -536,13 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/href1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/check_picture/checkbox1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -556,24 +524,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py">
+    <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/temp.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="-1056">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <marker date="1570886164074" expanded="true" signature="4365:4406" ph="..." />
-            <marker date="1570886164074" expanded="true" signature="4455:4553" ph="..." />
+            <marker date="1570908860686" expanded="true" signature="275:278" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/db_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1570911238139" expanded="true" signature="203:208" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/href1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#211#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-86910736/lxml/etree/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="207" column="4" selection-start-line="207" selection-start-column="4" selection-end-line="207" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cscd_spider/spiders/citation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        <state relative-caret-position="600">
+          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/spiders/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="43" column="114" lean-forward="true" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscd_spider/selenium_test/test_selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1570924450089" expanded="true" signature="1673:1922" ph="..." />
           </folding>
         </state>
       </provider>
