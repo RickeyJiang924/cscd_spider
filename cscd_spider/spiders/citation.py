@@ -50,7 +50,7 @@ class CitationSpider(scrapy.Spider):
             self.keywords += ","
         self.keywords.strip(",")
 
-        # 引文在 #document 也就是新的页面 所以需要打开新的页面
+        # 引文在 #document 也就是新的页面 所以需要打开新的页面 ？？？
         wxmain = response.xpath("/div[@class='wxmain']")
         citation_detail_url = wxmain.css('frame[id="frame1"]::attr(src)').extract_first()
         print(citation_detail_url)
